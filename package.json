@@ -1,11 +1,14 @@
 {
   "name": "@hexlet/code",
-  "type": "module",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Alexsporty/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Alexsporty/frontend-project-44/actions)",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +17,8 @@
     "eslint": "^9.2.0",
     "globals": "^15.1.0",
     "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
-
