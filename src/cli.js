@@ -8,8 +8,8 @@ export default () => {
 
   let minNumber = 1;
   let maxNumber = 20;
-
-  for (let i = 0; i < 3; i++) {
+  let countRound = 3;
+  for (let i = 0; i < countRound; i++) {
     const randNumber = Math.floor(
       Math.random() * (maxNumber - minNumber + 1) + minNumber
     );

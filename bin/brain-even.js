@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import helloQuest from "../src/cli.js";
+import even from "../src/games/even.js";
 
-helloQuest();
+even();
