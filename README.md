@@ -5,3 +5,4 @@
 https://asciinema.org/a/659153 Even
 https://asciinema.org/a/659540 Calculator
 https://asciinema.org/a/659559 Gcd
+https://asciinema.org/a/659577 Progression
