@@ -10,10 +10,10 @@ const randomCalc = () => {
 };
 
 const operation = () => {
-  const simbol = ["+", "-", "*"];
-  const operator = Math.floor(Math.random() * simbol.length);
+  const symbol = ["+", "-", "*"];
+  const operator = Math.floor(Math.random() * symbol.length);
 
-  return simbol[operator];
+  return symbol[operator];
 };
 
 const getQuestion = () => {
