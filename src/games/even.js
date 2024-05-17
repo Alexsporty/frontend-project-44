@@ -1,10 +1,10 @@
-import gameEven from "../index.js";
+import gameEven from '../index.js';
 
 const description =
   'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getCorrectAnswer = (num) => {
-  return num % 2 === 0 ? "yes" : "no";
+  return num % 2 === 0 ? 'yes' : 'no';
 };
 
 const getQuestion = (min, max) => {

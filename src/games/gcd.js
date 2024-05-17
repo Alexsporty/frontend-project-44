@@ -1,6 +1,6 @@
-import gameGcd from "../index.js";
+import gameGcd from '../index.js';
 
-const description = "Find the greatest common divisor of given numbers.";
+const description = 'Find the greatest common divisor of given numbers.';
 
 const randomNumber = () => {
   let min = 1;

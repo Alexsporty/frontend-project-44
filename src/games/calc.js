@@ -1,6 +1,6 @@
-import gameCalc from "../index.js";
+import gameCalc from '../index.js';
 
-const description = "What is the result of the expression?";
+const description = 'What is the result of the expression?';
 
 const randomCalc = () => {
   let min = 1;
@@ -10,7 +10,7 @@ const randomCalc = () => {
 };
 
 const operation = () => {
-  const symbol = ["+", "-", "*"];
+  const symbol = ['+', '-', '*'];
   const operator = Math.floor(Math.random() * symbol.length);
 
   return symbol[operator];
@@ -26,11 +26,11 @@ const getQuestion = () => {
 
 const getCorrectAnswer = (numberOne, numberTwo, operator) => {
   switch (operator) {
-    case "+":
+    case '+':
       return String(numberOne + numberTwo);
-    case "-":
+    case '-':
       return String(numberOne - numberTwo);
-    case "*":
+    case '*':
       return String(numberOne * numberTwo);
   }
 };
