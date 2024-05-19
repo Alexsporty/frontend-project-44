@@ -17,27 +17,27 @@ const operation = () => {
 };
 
 const getQuestion = () => {
-  const randNumberOne = randomCalc();
-  const randNumberTwo = randomCalc();
+  const randNumber1 = randomCalc();
+  const randNumber2 = randomCalc();
   const randOperator = operation();
 
-  return [randNumberOne, randNumberTwo, randOperator];
+  return [randNumber1, randNumber2, randOperator];
 };
 
-const getCorrectAnswer = (numberOne, numberTwo, operator) => {
-  if (operator === '+') return String(numberOne + numberTwo);
-  if (operator === '-') return String(numberOne - numberTwo);
-  if (operator === '*') return String(numberOne * numberTwo);
+const getCorrectAnswer = (number1, number2, operator) => {
+  if (operator === '+') return String(number1 + number2);
+  if (operator === '-') return String(number1 - number2);
+  if (operator === '*') return String(number1 * number2);
 
-  return String(numberOne / numberTwo);
+  return String(number1 / number2);
 };
 
 const getQuestionAndAnswer = () => {
-  const [randNumberOne, randNumberTwo, randOperator] = getQuestion();
-  const question = `${randNumberOne} ${randOperator} ${randNumberTwo}`;
+  const [randNumber1, randNumber2, randOperator] = getQuestion();
+  const question = `${randNumber1} ${randOperator} ${randNumber2}`;
   const correctAnswer = getCorrectAnswer(
-    randNumberOne,
-    randNumberTwo,
+    randNumber1,
+    randNumber2,
     randOperator,
   );
 

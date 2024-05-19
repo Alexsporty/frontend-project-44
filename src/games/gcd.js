@@ -10,10 +10,10 @@ const randomNumber = () => {
 };
 
 const getQuestion = () => {
-  const randNumberOne = randomNumber();
-  const randNumberTwo = randomNumber();
+  const randNumber1 = randomNumber();
+  const randNumber2 = randomNumber();
 
-  return [randNumberOne, randNumberTwo];
+  return [randNumber1, randNumber2];
 };
 
 const getCorrectAnswer = (number1, number2) => {
@@ -23,10 +23,10 @@ const getCorrectAnswer = (number1, number2) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const [randNumberOne, randNumberTwo] = getQuestion();
-  const question = `${randNumberOne} ${randNumberTwo}`;
+  const [randNumber1, randNumber2] = getQuestion();
+  const question = `${randNumber1} ${randNumber2}`;
 
-  const correctAnswer = getCorrectAnswer(randNumberOne, randNumberTwo);
+  const correctAnswer = getCorrectAnswer(randNumber1, randNumber2);
 
   return [question, correctAnswer];
 };
