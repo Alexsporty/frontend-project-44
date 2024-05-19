@@ -2,8 +2,8 @@ import gameProgression from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const randomNumber = (min, max) => {
-  const rand = Math.floor(Math.random() * (max - min + 1) + min);
+const randomNumber = (minNumber, maxNumber) => {
+  const rand = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
   return rand;
 };
 
@@ -13,15 +13,15 @@ const getQuestionAndAnswer = () => {
   const lengthProgression = randomNumber(5, 10);
   const elementProgression = randomNumber(0, lengthProgression - 1);
   let strProgression = '';
-  for (let i = 0; i < lengthProgression; i++) {
+  for (let i = 0; i < lengthProgression; i += 1) {
     if (i === elementProgression) {
       strProgression += '.. ';
     } else {
-      strProgression += String(firstNumber + stepProgression * i) + ' ';
+      strProgression += `${String(firstNumber + stepProgression * i)} `;
     }
   }
   const correctAnswer = String(
-    firstNumber + stepProgression * elementProgression
+    firstNumber + stepProgression * elementProgression,
   );
   return [strProgression, correctAnswer];
 };

@@ -3,9 +3,9 @@ import gameCalc from '../index.js';
 const description = 'What is the result of the expression?';
 
 const randomCalc = () => {
-  let min = 1;
-  let max = 20;
-  const rand = Math.floor(Math.random() * (max - min + 1) + min);
+  const minNumber = 1;
+  const maxNumber = 20;
+  const rand = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
   return rand;
 };
 
@@ -25,14 +25,11 @@ const getQuestion = () => {
 };
 
 const getCorrectAnswer = (numberOne, numberTwo, operator) => {
-  switch (operator) {
-    case '+':
-      return String(numberOne + numberTwo);
-    case '-':
-      return String(numberOne - numberTwo);
-    case '*':
-      return String(numberOne * numberTwo);
-  }
+  if (operator === '+') return String(numberOne + numberTwo);
+  if (operator === '-') return String(numberOne - numberTwo);
+  if (operator === '*') return String(numberOne * numberTwo);
+
+  return String(numberOne / numberTwo);
 };
 
 const getQuestionAndAnswer = () => {
@@ -41,7 +38,7 @@ const getQuestionAndAnswer = () => {
   const correctAnswer = getCorrectAnswer(
     randNumberOne,
     randNumberTwo,
-    randOperator
+    randOperator,
   );
 
   return [question, correctAnswer];

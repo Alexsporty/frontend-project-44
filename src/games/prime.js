@@ -1,22 +1,21 @@
 import gamePrime from '../index.js';
 
-const description =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getCorrectAnswer = (num) => {
+const getCorrectAnswer = (number) => {
   let isPrime = false;
 
-  for (let i = 2; i <= num - 1; i++) {
-    if (num % i === 0) {
+  for (let i = 2; i <= number - 1; i += 1) {
+    if (number % i === 0) {
       isPrime = true;
     }
   }
   if (isPrime === false) return 'yes';
-  else return 'no';
+  return 'no';
 };
 
-const getQuestion = (min, max) => {
-  const randNumber = Math.floor(Math.random() * (max - min + 1) + min);
+const getQuestion = (minNumber, maxNumber) => {
+  const randNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
   return randNumber;
 };
 
