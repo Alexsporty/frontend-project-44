@@ -1,13 +1,7 @@
-import gameCalc from '../index.js';
+import gameCalc from './index.js';
+import randomNumber from './function-random-number.js';
 
 const description = 'What is the result of the expression?';
-
-const randomCalc = () => {
-  const minNumber = 1;
-  const maxNumber = 20;
-  const rand = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-  return rand;
-};
 
 const operation = () => {
   const symbol = ['+', '-', '*'];
@@ -17,19 +11,24 @@ const operation = () => {
 };
 
 const getQuestion = () => {
-  const randNumber1 = randomCalc();
-  const randNumber2 = randomCalc();
+  const randNumber1 = randomNumber(1, 20);
+  const randNumber2 = randomNumber(1, 20);
   const randOperator = operation();
 
   return [randNumber1, randNumber2, randOperator];
 };
 
 const getCorrectAnswer = (number1, number2, operator) => {
-  if (operator === '+') return String(number1 + number2);
-  if (operator === '-') return String(number1 - number2);
-  if (operator === '*') return String(number1 * number2);
-
-  return String(number1 / number2);
+  switch (operator) {
+    case '+':
+      return String(number1 + number2);
+    case '-':
+      return String(number1 - number2);
+    case '*':
+      return String(number1 * number2);
+    default:
+  }
+  return 0;
 };
 
 const getQuestionAndAnswer = () => {

@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Alexsporty/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Alexsporty/frontend-project-44/actions)",
+  "description": "(Консольное приложение из 5 игр с математическими задачами)",
   "type": "module",
   "main": "index.js",
   "scripts": {

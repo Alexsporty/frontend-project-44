@@ -1,11 +1,7 @@
-import gameProgression from '../index.js';
+import gameProgression from './index.js';
+import randomNumber from './function-random-number.js';
 
 const description = 'What number is missing in the progression?';
-
-const randomNumber = (minNumber, maxNumber) => {
-  const rand = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-  return rand;
-};
 
 const getQuestionAndAnswer = () => {
   const firstNumber = randomNumber(5, 23);
