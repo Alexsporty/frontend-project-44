@@ -1,4 +1,4 @@
-import gameProgression from './index.js';
+import gameProgression from '../index.js';
 import randomNumber from './function-random-number.js';
 
 const description = 'What number is missing in the progression?';

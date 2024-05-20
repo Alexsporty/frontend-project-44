@@ -1,4 +1,4 @@
-import gameGcd from './index.js';
+import gameGcd from '../index.js';
 import randomNumber from './function-random-number.js';
 
 const description = 'Find the greatest common divisor of given numbers.';

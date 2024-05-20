@@ -1,9 +1,9 @@
-import gameCalc from './index.js';
+import gameCalc from '../index.js';
 import randomNumber from './function-random-number.js';
 
 const description = 'What is the result of the expression?';
 
-const operation = () => {
+const getOperation = () => {
   const symbol = ['+', '-', '*'];
   const operator = Math.floor(Math.random() * symbol.length);
 
@@ -13,7 +13,7 @@ const operation = () => {
 const getQuestion = () => {
   const randNumber1 = randomNumber(1, 20);
   const randNumber2 = randomNumber(1, 20);
-  const randOperator = operation();
+  const randOperator = getOperation();
 
   return [randNumber1, randNumber2, randOperator];
 };
@@ -27,8 +27,8 @@ const getCorrectAnswer = (number1, number2, operator) => {
     case '*':
       return String(number1 * number2);
     default:
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
-  return 0;
 };
 
 const getQuestionAndAnswer = () => {
