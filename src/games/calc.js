@@ -1,9 +1,9 @@
 import gameCalc from '../index.js';
-import randomNumber from './function-random-number.js';
+import getRandomNumber from './function-random-number.js';
 
 const description = 'What is the result of the expression?';
 
-const getOperation = () => {
+const getRandomOperation = () => {
   const symbol = ['+', '-', '*'];
   const operator = Math.floor(Math.random() * symbol.length);
 
@@ -11,9 +11,9 @@ const getOperation = () => {
 };
 
 const getQuestion = () => {
-  const randNumber1 = randomNumber(1, 20);
-  const randNumber2 = randomNumber(1, 20);
-  const randOperator = getOperation();
+  const randNumber1 = getRandomNumber(1, 20);
+  const randNumber2 = getRandomNumber(1, 20);
+  const randOperator = getRandomOperation();
 
   return [randNumber1, randNumber2, randOperator];
 };
