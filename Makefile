@@ -1,6 +1,15 @@
 install: install-deps
 	npx simple-git-hooks
 
+run: 
+	make install
+
+run: 
+	make lint
+
+run: 
+	make test
+
 brain-calc:
 	node bin/brain-calc.js
 
