@@ -7,7 +7,7 @@ CodeClimate
 
 ![Linter Status](https://github.com/Alexsporty/frontend-project-44/actions/workflows/nodejs.yml/badge.svg)
 
-(ИГРЫ РАЗУМА)
+ИГРЫ РАЗУМА
 Консольное приложение из 5 игр с математическими задачами, компьютер рандомно задаёт вопрос, пользователь отвечает!
 В случае неправильного ответа, игра закончена!
 
