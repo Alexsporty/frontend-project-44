@@ -1,15 +1,3 @@
-install: install-deps
-	npx simple-git-hooks
-
-run: 
-	make install
-
-run: 
-	make lint
-
-run: 
-	make test
-
 brain-calc:
 	node bin/brain-calc.js
 
@@ -31,7 +19,7 @@ brain-games:
 run:
 	bin/nodejs-package.js 10
 
-install-deps:
+install:
 	npm ci --legacy-peer-deps
 
 test:
