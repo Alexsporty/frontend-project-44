@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/Alexsporty/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Alexsporty/frontend-project-44/actions)
 
-CodeClimate
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/4c92b855b7667be46617/maintainability)](https://codeclimate.com/github/Alexsporty/frontend-project-44/maintainability)
 
 ![Linter Status](https://github.com/Alexsporty/frontend-project-44/actions/workflows/nodejs.yml/badge.svg)
