@@ -11,9 +11,9 @@
 Консольное приложение из 5 игр с математическими задачами, компьютер рандомно задаёт вопрос, пользователь отвечает!
 В случае неправильного ответа, игра закончена!
 
-
-https://asciinema.org/a/659153 Even
-https://asciinema.org/a/659540 Calculator
-https://asciinema.org/a/659559 Gcd
-https://asciinema.org/a/659577 Progression
-https://asciinema.org/a/659867 Prime
+Для запуска игр, введите команду в терминале!
+https://asciinema.org/a/659153 Even 'make brain-even'
+https://asciinema.org/a/659540 Calculator 'make brain-calc'
+https://asciinema.org/a/659559 Gcd 'make brain-gcd'
+https://asciinema.org/a/659577 Progression 'make brain-progression'
+https://asciinema.org/a/659867 Prime 'make brain-prime'
